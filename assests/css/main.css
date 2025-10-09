@@ -1,0 +1,47 @@
+:root{
+    --main-color:#FF782D;
+}
+/*start header*/
+.navbar{
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+.logo-nav .logo {
+height: 35px;
+width: auto;
+object-fit: contain;
+}
+.logo-nav .navbar-brand img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+  color: #000 !important; 
+  transition: all 0.4s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--main-color) !important; 
+}
+.navbar-nav{
+gap: 20px;
+}
+.register a{
+  color: #000000;
+  transition: all 0.4s ease;
+  
+}
+.register a:hover{
+  color: var(--main-color);
+}
+.search{
+  left: 127px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: 2px solid var(--main-color);
+  background-color: #FFFFFF;
+}
+/*end header*/
