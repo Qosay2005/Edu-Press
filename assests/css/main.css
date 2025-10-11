@@ -1,6 +1,9 @@
 :root{
     --main-color:#FF782D;
 }
+body{
+  overflow-x: hidden;
+}
 /*start header*/
 .navbar{
     padding: 20px;
@@ -37,11 +40,58 @@ gap: 20px;
   color: var(--main-color);
 }
 .search{
-  left: 127px;
-  width: 35px;
-  height: 35px;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   border: 2px solid var(--main-color);
   background-color: #FFFFFF;
 }
 /*end header*/
+/*start top-catogories*/
+.top-catogoriy{
+  padding: 50px 0;
+}
+.info-catogoriy p{
+  color:#555555 ;
+  
+}
+.btn{
+  border: 2px solid #c0c0c0;
+  border-radius: 50px;
+  width: 120px;
+  background-color: #FFFFFF;
+   padding: 2px 0px;
+
+}
+.btn:hover{
+  background-color: var(--main-color);
+}
+
+.card{
+   box-shadow: 0px 4px 4px #00000040;
+   border-radius: 10px;
+   transition: all 0.4s ease;
+   padding:5px 0;
+   gap: 10px;
+}
+.card:hover{
+  transform: scale(1.02);
+}
+
+.card h2{
+  font-size: 14px;
+  transition: all 0.4s ease;
+  
+}
+.card h2:hover{
+ color: var(--main-color);
+}
+.card .number-course{
+  font-size: 12px;
+  font-weight: 600;
+   color: #555555;
+}
+
+
+/*end top-catogories*/
