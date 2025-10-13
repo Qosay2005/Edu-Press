@@ -194,5 +194,18 @@ transition: all 0.4s ease;
 .featured-courses .info-price a:hover{
  background-color: #FF782D;
 }
-
+.activity .active-student{
+  background-color:#F5F5F5;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+.activity .active-student .number-active{
+  color: var(--main-color);
+}
+.activity .active-student{
+  transition: all 0.4s ease;
+}
+.activity .active-student:hover{
+  transform: scale(1.02);
+}
 /* end featured courses*/
