@@ -1,6 +1,9 @@
 :root{
     --main-color:#FF782D;
 }
+.btn-main-color{
+  background-color: var(--main-color);
+}
 body{
   overflow-x: hidden;
 }
@@ -46,8 +49,42 @@ gap: 20px;
   border-radius: 100%;
   border: 2px solid var(--main-color);
   background-color: #FFFFFF;
+  cursor: pointer;
 }
 /*end header*/
+
+/*start hero*/
+
+.hero{
+  background-image: url("./../img/hero/hero-bg.webp");
+  background-size: cover;
+  background-position:center;
+  padding: 50px 0;
+ 
+}
+.hero .container{
+  padding: 0 20px;
+}
+.hero .btn{
+  border-radius: 50px;
+  background-color: #FF782D;
+}
+.hero-content h1{
+  font-size: 40px;
+}
+.hero-content p{
+  font-size: 18px;
+  color: #555555;
+}
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+/*end hero*/
 /*start top-catogories*/
 .top-catogoriy{
   padding: 50px 0;
@@ -56,7 +93,7 @@ gap: 20px;
   color:#555555 ;
   
 }
-.btn{
+.top-catogoriy .btn{
   border: 2px solid #c0c0c0;
   border-radius: 50px;
   width: 120px;
@@ -64,34 +101,98 @@ gap: 20px;
    padding: 2px 0px;
 
 }
-.btn:hover{
+.top-catogoriy .btn:hover{
   background-color: var(--main-color);
 }
 
-.card{
+.top-catogoriy .card{
    box-shadow: 0px 4px 4px #00000040;
    border-radius: 10px;
    transition: all 0.4s ease;
    padding:5px 0;
    gap: 10px;
 }
-.card:hover{
+.top-catogoriy .card:hover{
   transform: scale(1.02);
 }
 
-.card h2{
+.top-catogoriy .card h2{
   font-size: 14px;
   transition: all 0.4s ease;
   
 }
-.card h2:hover{
+.top-catogoriy .card h2:hover{
  color: var(--main-color);
 }
-.card .number-course{
+.top-catogoriy .card .number-course{
   font-size: 12px;
   font-weight: 600;
    color: #555555;
 }
-
-
 /*end top-catogories*/
+
+/* start featured courses*/
+.featured-courses{
+  padding: 50px 0;
+}
+.featured-courses .btn{
+   border: 2px solid #c0c0c0;
+  border-radius: 50px;
+  width: 120px;
+  background-color: #FFFFFF;
+   padding: 2px 0px;
+}
+.info-featured-courses p{
+  color: #555555;
+}
+.featured-courses .btn{
+  transition: all 0.4s ease;
+}
+.featured-courses .btn:hover{
+  background-color: var(--main-color);
+}
+.featured-courses .prime{
+  font-size: 10px;
+  margin-top: 3px;
+}
+.featured-courses .card .card-body h4{
+  font-size: 12px;
+  transition: all 0.4s ease;
+}
+.featured-courses .card .card-body h4:hover{
+  color: var(--main-color);
+}
+.featured-courses .card .card-body{
+  gap: 10px;
+}
+.featured-courses .card{
+    box-shadow: 0px 0px 5px black;
+    transition: all 0.4s ease;
+}
+.featured-courses .card:hover{
+  transform: scale(1.02);
+}
+.featured-courses .info-course{
+  gap: 24px;
+}
+.featured-courses .line{
+  width: 170px;
+  height: 1px;
+  background-color: #EAEAEA;
+}
+.featured-courses .info-price .price .price-course{
+color: #9D9D9D;
+text-decoration: line-through;
+}
+.featured-courses .info-price .price .access{
+color: #55BE24;
+}
+.featured-courses .info-price a{
+transition: all 0.4s ease;
+}
+
+.featured-courses .info-price a:hover{
+ background-color: #FF782D;
+}
+
+/* end featured courses*/
