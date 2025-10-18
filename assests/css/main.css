@@ -1,9 +1,11 @@
 :root{
     --main-color:#FF782D;
+    --dark-color:#555555;
 }
 .btn-main-color{
   background-color: var(--main-color);
 }
+
 body{
   overflow-x: hidden;
 }
@@ -74,7 +76,7 @@ gap: 20px;
 }
 .hero-content p{
   font-size: 18px;
-  color: #555555;
+  color:var(--dark-color);
 }
 @media (max-width: 768px) {
   .hero-content h1 {
@@ -90,7 +92,7 @@ gap: 20px;
   padding: 50px 0;
 }
 .info-catogoriy p{
-  color:#555555 ;
+  color:var(--dark-color);
   
 }
 .top-catogoriy .btn{
@@ -127,7 +129,7 @@ gap: 20px;
 .top-catogoriy .card .number-course{
   font-size: 12px;
   font-weight: 600;
-   color: #555555;
+   color:var(--dark-color);
 }
 /*end top-catogories*/
 
@@ -143,7 +145,7 @@ gap: 20px;
    padding: 2px 0px;
 }
 .info-featured-courses p{
-  color: #555555;
+  color:var(--dark-color);
 }
 .featured-courses .btn{
   transition: all 0.4s ease;
@@ -225,8 +227,30 @@ color: #55BE24;
   transform: scale(1.02);
 }
 .learn-press p{
-  color: #555555;
+  color:var(--dark-color);
 }
-
-
 /*end learn press */
+
+/*start student feedbacks*/
+.Student-feedbacks{
+  padding: 50px 0;
+}
+.Student-feedbacks .card{
+  padding: 33px 0;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+.Student-feedbacks .card:hover{
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transform: scale(1.02);
+}
+.Student-feedbacks p{
+  color: var(--dark-color);
+}
+.Student-feedbacks .info-student-feedback p{
+color:#000000;
+}
+.info-student .major{
+  color:var(--dark-color);
+}
+/*end student feedbacks*/
