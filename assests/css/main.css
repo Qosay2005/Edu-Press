@@ -193,7 +193,28 @@ text-decoration: line-through;
 .featured-courses .info-price .price .access{
 color: #55BE24;
 }
+.info-course {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;       
+  padding-bottom: 15px;     
+  margin-bottom: 15px;     
+}
 
+.info-course::after {
+  content: "";
+  position: absolute;
+  left: 5%;                
+  bottom: 0;
+  width: 90%;               
+  height: 1px;
+  background-color: #EAEAEA; 
+}
+
+/* end featured courses*/
+
+/* start activity*/
 .activity .active-student{
   background-color:#F5F5F5;
   border-radius: 10px;
@@ -208,8 +229,7 @@ color: #55BE24;
 .activity .active-student:hover{
   transform: scale(1.02);
 }
-
-/* end featured courses*/
+/* end activity*/
 
 /*start learn press */
 .learn-press{
