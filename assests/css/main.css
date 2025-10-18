@@ -96,7 +96,7 @@ gap: 20px;
   
 }
 .top-catogoriy .btn{
-  border: 2px solid #c0c0c0;
+  border: 2px solid var(--dark-color);
   border-radius: 50px;
   width: 120px;
   background-color: #FFFFFF;
@@ -138,7 +138,7 @@ gap: 20px;
   padding: 50px 0;
 }
 .featured-courses .btn{
-   border: 2px solid #c0c0c0;
+   border: 2px solid var(--dark-color);
   border-radius: 50px;
   width: 120px;
   background-color: #FFFFFF;
@@ -211,7 +211,11 @@ color: #55BE24;
   height: 1px;
   background-color: #EAEAEA; 
 }
-
+@media screen and (max-width:768px) {
+  .featured-courses  .card{
+    border-radius: 25px;
+  }
+}
 /* end featured courses*/
 
 /* start activity*/
@@ -252,25 +256,73 @@ color: #55BE24;
 /*end learn press */
 
 /*start student feedbacks*/
-.Student-feedbacks{
+.student-feedbacks{
   padding: 50px 0;
 }
-.Student-feedbacks .card{
+.student-feedbacks .card{
   padding: 33px 0;
   border-radius: 15px;
   transition: all 0.4s ease;
 }
-.Student-feedbacks .card:hover{
+.student-feedbacks .card:hover{
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     transform: scale(1.02);
 }
-.Student-feedbacks p{
+.student-feedbacks p{
   color: var(--dark-color);
 }
-.Student-feedbacks .info-student-feedback p{
+.student-feedbacks .info-student-feedback p{
 color:#000000;
 }
 .info-student .major{
   color:var(--dark-color);
 }
 /*end student feedbacks*/
+
+/* start latest articles*/
+.latest-articles{
+padding: 50px 0;
+}
+.latest-articles .btn{
+   border: 2px solid var(--dark-color);
+  border-radius: 50px;
+  width: 120px;
+  background-color: #FFFFFF;
+   padding: 2px 0px;
+   transition: all 0.4s ease;
+}
+.latest-articles .btn:hover{
+  background-color: var(--main-color);
+}
+.latest-articles .card{
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  
+}
+.latest-articles .card:hover{
+transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.latest-articles .card h4{
+  font-size: 12px;
+  transition: all 0.4s ease;
+}
+.latest-articles .card h4:hover{
+  color: var(--main-color);
+}
+.latest-articles .info-artical .date{
+  color:var(--dark-color);
+  font-size: 13px;
+}
+.latest-articles .date-artical p{
+color:var(--dark-color);
+font-size: 13px;
+}
+@media screen and (max-width:768px) {
+  .latest-articles  .card{
+    border-radius: 25px;
+  }
+}
+
+/*end latest articles*/
