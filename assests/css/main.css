@@ -371,8 +371,20 @@ font-size: 20px;
 .info-addres{
   color: var(--dark-color);
 }
+.info-addres span{
+  transition: all 0.4s ease;
+}
+.info-addres span:hover{
+  color: var(--main-color);
+}
 .info-contact{
   color: var(--dark-color);
+}
+.info-contact span{
+  transition: all 0.4s ease;
+}
+.info-contact span:hover{
+  color: var(--main-color);
 }
 .icon-footer svg{
   fill: var(--dark-color);
