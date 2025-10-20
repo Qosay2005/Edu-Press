@@ -68,3 +68,86 @@ gap: 20px;
     color: var(--main-color);
 }
 /* end header*/
+
+/*start all courses*/
+.all-courses{
+    padding: 50px 0;
+}
+.search-course{
+    border: 0;
+   border-bottom: 1px solid #000000;
+   right: 72px;
+  
+}
+.search-courses svg{
+right: 68px;
+bottom: 4px;
+ cursor: pointer;
+}
+.menu-right-side{
+    background-color: white;
+    border: 0;
+}
+.all-courses .card .card-body h4{
+  font-size: 15px;
+  transition: all 0.4s ease;
+}
+.all-courses .card .card-body h4:hover{
+  color: var(--main-color);
+}
+.all-courses .card .card-body{
+  gap: 10px;
+}
+.all-courses .card{
+    box-shadow: 0px 0px 5px black;
+    transition: all 0.4s ease;
+    border-radius: 16px;
+}
+.all-courses .card:hover{
+  transform: scale(1.02);
+}
+.all-courses .card img{
+border-radius: 14px;
+}
+.all-courses .info-course{
+  gap: 24px;
+}
+.all-courses .info-price .price .price-course{
+color: #9D9D9D;
+text-decoration: line-through;
+}
+.all-courses .info-price .price .access{
+color: #55BE24;
+}
+.info-course {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;       
+  padding-bottom: 15px;     
+  margin-bottom: 15px;     
+}
+
+.info-course::after {
+  content: "";
+  position: absolute;
+  left: 5%;                
+  bottom: 0;
+  width: 90%;               
+  height: 1px;
+  background-color: #EAEAEA; 
+}
+@media screen and (max-width:768px) {
+  .all-courses  .card{
+    border-radius: 27px;
+  }
+}
+.pagination a{
+   color: #000000;
+   transition: all 0.4s ease;
+}
+.pagination a:hover{
+   background-color: #000000;
+   color: white;
+}
+/* end all courses */

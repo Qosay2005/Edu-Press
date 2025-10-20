@@ -181,11 +181,6 @@ border-radius: 14px;
 .featured-courses .info-course{
   gap: 24px;
 }
-.featured-courses .line{
-  width: 170px;
-  height: 1px;
-  background-color: #EAEAEA;
-}
 .featured-courses .info-price .price .price-course{
 color: #9D9D9D;
 text-decoration: line-through;
