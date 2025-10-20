@@ -151,3 +151,72 @@ color: #55BE24;
    color: white;
 }
 /* end all courses */
+
+/* start footer */
+.footer{
+  padding: 50px 0;
+}
+.logo-footer img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-footer .logo-icon {
+  width: 40px; 
+  height: auto;
+}
+
+.logo-footer .logo-text {
+  height: 20px; 
+  width: auto;
+}
+.footer p{
+  color: var(--dark-color);
+}
+.footer .help-footer h2{
+font-size: 20px;
+}
+.footer .nav-footer{
+  list-style: none;
+}
+.footer .nav-footer a{
+  color: var(--dark-color);
+  transition: all 0.4s ease;
+}
+.footer .nav-footer a:hover{
+  color: var(--main-color);
+}
+.program-footer h2{
+font-size: 20px;
+}
+.contact-footer h2{
+  font-size: 20px;
+}
+.info-addres{
+  color: var(--dark-color);
+}
+.info-addres span{
+  transition: all 0.4s ease;
+}
+.info-addres span:hover{
+  color: var(--main-color);
+}
+.info-contact{
+  color: var(--dark-color);
+}
+.info-contact span{
+  transition: all 0.4s ease;
+}
+.info-contact span:hover{
+  color: var(--main-color);
+}
+.icon-footer svg{
+  fill: var(--dark-color);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.icon-footer svg:hover{
+  fill: var(--main-color);
+}
+
+/* end footer */
