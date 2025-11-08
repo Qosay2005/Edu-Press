@@ -1,0 +1,254 @@
+:root{
+    --main-color:#FF782D;
+    --dark-color:#555555;
+}
+.btn-main-color{
+  background-color: var(--main-color);
+}
+
+body{
+  overflow-x: hidden;
+}
+/*start header*/
+.navbar{
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+.logo-nav .logo {
+height: 35px;
+width: auto;
+object-fit: contain;
+}
+.logo-nav .navbar-brand img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+  color: #000 !important; 
+  transition: all 0.4s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--main-color) !important; 
+}
+.navbar-nav{
+gap: 20px;
+}
+.register a{
+  color: #000000;
+  transition: all 0.4s ease;
+  
+}
+.register a:hover{
+  color: var(--main-color);
+}
+.search{
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 2px solid var(--main-color);
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.nav-page{
+    background-color:#F5F5F5;
+    padding: 20px 0;
+}
+.nav-page a,p{
+    color: var(--dark-color);
+    transition: all 0.4s ease;
+}
+.reg-edu a{
+  transition: all 0.4s ease;
+  color: #000000;
+}
+.reg-edu a:hover{
+  color: var(--main-color);
+}
+.nav-page a:hover{
+    color: var(--main-color);
+}
+.nav-page p:hover{
+    color: var(--main-color);
+}
+/*end header*/
+
+/* start hero */
+.hero-course{
+    background-color: #000000;
+}
+.hero-course .photography .btn-photography{
+border-radius: 12px;
+background-color: var(--dark-color);
+padding: 5px;
+transition: all 0.4s ease;
+}
+.hero-course .photography .btn-photography:hover{
+background-color: var(--main-color);
+}
+.hero-course .prime-course{
+    color: #9D9D9D;
+}
+.info-hero{
+    gap: 20px;
+}
+.hero-course .card{
+  border-radius: 12px;
+  bottom: -140px;
+  right: 20px;
+}
+
+.hero-course .card .old-price{
+  color: #9D9D9D;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.hero-course .card .new-price{
+  color: #F51A1A;
+  
+}
+.hero-course .card .start-now{
+  border-radius: 30px;
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color);
+ 
+}
+.hero-course .card img{
+  max-width: 400px;  
+  width: 100%;       
+  height: auto;      
+  border-radius: 10px; 
+}
+
+/* end hero */
+
+
+/* start add comment*/
+.add-comment{
+  padding: 50px;
+}
+.add-comment .info-personal input{
+border-radius: 6px;
+border: 2px solid #9D9D9D;
+width: 50%;
+height: auto;
+padding: 5px;
+}
+.add-comment textarea{
+border-radius: 6px;
+border: 2px solid #9D9D9D;
+}
+.add-comment .btn-posts{
+border-radius: 20px;
+background-color: var(--main-color);
+border: 2px solid var(--main-color);
+transition: all 0.4s ease;
+padding: 5px 12px;
+
+}
+.add-comment .btn-posts:hover{
+transform: scale(1.02);
+}
+/* end add comment */
+
+/* start about course */
+.about-course{
+  padding: 50px 0;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+  color:#000000;
+  
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color:var(--main-color);
+  background-color:#EAEAEA ;
+}
+.accordion .header{
+  transition: all 0.4s ease;
+}
+.accordion .header:hover{
+ color: var(--main-color);
+}
+.file-course .header-inline{
+ transition: all 0.4s ease;
+}
+.file-course .header-inline:hover{
+color: var(--main-color);
+}
+.tab-content {
+  background-color:#F5F5F5;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* end about course */
+/* start footer */
+.footer{
+  padding: 50px 0;
+}
+.logo-footer img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-footer .logo-icon {
+  width: 40px; 
+  height: auto;
+}
+
+.logo-footer .logo-text {
+  height: 20px; 
+  width: auto;
+}
+.footer p{
+  color: var(--dark-color);
+}
+.footer .help-footer h2{
+font-size: 20px;
+}
+.footer .nav-footer{
+  list-style: none;
+}
+.footer .nav-footer a{
+  color: var(--dark-color);
+  transition: all 0.4s ease;
+}
+.footer .nav-footer a:hover{
+  color: var(--main-color);
+}
+.program-footer h2{
+font-size: 20px;
+}
+.contact-footer h2{
+  font-size: 20px;
+}
+.info-addres{
+  color: var(--dark-color);
+}
+.info-addres span{
+  transition: all 0.4s ease;
+}
+.info-addres span:hover{
+  color: var(--main-color);
+}
+.info-contact{
+  color: var(--dark-color);
+}
+.info-contact span{
+  transition: all 0.4s ease;
+}
+.info-contact span:hover{
+  color: var(--main-color);
+}
+.icon-footer svg{
+  fill: var(--dark-color);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.icon-footer svg:hover{
+  fill: var(--main-color);
+}
+
+/* end footer */

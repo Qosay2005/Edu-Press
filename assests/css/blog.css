@@ -1,0 +1,263 @@
+:root{
+    --main-color:#FF782D;
+    --dark-color:#555555;
+}
+.btn-main-color{
+  background-color: var(--main-color);
+}
+.text-prime-color{
+    color: var(--dark-color);
+}
+body{
+  overflow-x: hidden;
+}
+/*start header*/
+.navbar{
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+.logo-nav .logo {
+height: 35px;
+width: auto;
+object-fit: contain;
+}
+.logo-nav .navbar-brand img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+  color: #000 !important; 
+  transition: all 0.4s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--main-color) !important; 
+}
+.navbar-nav{
+gap: 20px;
+}
+.register a{
+  color: #000000;
+  transition: all 0.4s ease;
+  
+}
+.register a:hover{
+  color: var(--main-color);
+}
+.search{
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 2px solid var(--main-color);
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.nav-page{
+    background-color:#F5F5F5;
+    padding: 20px 0;
+}
+.nav-page a,p{
+    color: var(--dark-color);
+    transition: all 0.4s ease;
+}
+.reg-edu a{
+  transition: all 0.4s ease;
+  color: #000000;
+}
+.reg-edu a:hover{
+  color: var(--main-color);
+}
+.nav-page a:hover{
+    color: var(--main-color);
+}
+.nav-page p:hover{
+    color: var(--main-color);
+}
+/* end header*/
+
+/*hero blog */
+.hero-blog{
+    padding: 50px;
+}
+.hero-blog img{
+    border-radius: 20px;
+}
+.info-article h4{
+    transition: all 0.4s ease;
+}
+.info-article h4:hover{
+    color: var(--main-color);
+}
+.recent-posts h4{
+    transition: all 0.4s ease;
+}
+.recent-posts h4:hover{
+    color: var(--main-color);
+}
+.btn-tag{
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid #EAEAEA;
+    padding: 5px;
+    transition: all 0.4s ease;
+}
+.btn-tag:hover{
+color: #000000;
+font-weight: bold;
+background-color: #EAEAEA;
+}
+
+.left-side{
+  transition: all 0.4s ease;
+}
+.left-side:hover{
+  transform: scale(1.02);
+}
+.left-side .info-prev-article h2{
+    transition: all 0.4s ease;
+}
+.left-side .info-prev-article h2:hover{
+    color: var(--main-color);
+}
+  
+
+
+
+.right-side{
+  transition: all 0.4s ease;
+}
+.right-side:hover{
+  transform: scale(1.02);
+}
+.right-side img{
+    transform: rotate(180deg);
+}
+.right-side .info-prev-article h2{
+    transition: all 0.4s ease;
+}
+.right-side .info-prev-article h2:hover{
+    color: var(--main-color);
+}
+
+
+
+/* end hero blog */
+
+
+
+/*pagination*/
+
+.pagination a{
+   color: #000000;
+   transition: all 0.4s ease;
+}
+.pagination a:hover{
+   background-color: #000000;
+   color: white;
+}
+/*end pagination */
+
+/* start add comment*/
+.add-comment{
+  padding: 50px;
+}
+.add-comment .info-personal input{
+border-radius: 6px;
+border: 2px solid #9D9D9D;
+width: 50%;
+height: auto;
+padding: 5px;
+}
+.add-comment textarea{
+border-radius: 6px;
+border: 2px solid #9D9D9D;
+}
+.add-comment .btn-posts{
+border-radius: 20px;
+background-color: var(--main-color);
+border: 2px solid var(--main-color);
+transition: all 0.4s ease;
+padding: 5px 12px;
+
+}
+.add-comment .btn-posts:hover{
+transform: scale(1.02);
+}
+/* end add comment */
+
+
+ .offcanvas .offcanvas-body, .instructors, .price, .review, .level{
+  gap: 15px;
+}
+
+/* start footer */
+.footer{
+  padding: 50px 0;
+}
+.logo-footer img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-footer .logo-icon {
+  width: 40px; 
+  height: auto;
+}
+
+.logo-footer .logo-text {
+  height: 20px; 
+  width: auto;
+}
+.footer p{
+  color: var(--dark-color);
+}
+.footer .help-footer h2{
+font-size: 20px;
+}
+.footer .nav-footer{
+  list-style: none;
+}
+.footer .nav-footer a{
+  color: var(--dark-color);
+  transition: all 0.4s ease;
+}
+.footer .nav-footer a:hover{
+  color: var(--main-color);
+}
+.program-footer h2{
+font-size: 20px;
+}
+.contact-footer h2{
+  font-size: 20px;
+}
+.info-addres{
+  color: var(--dark-color);
+}
+.info-addres span{
+  transition: all 0.4s ease;
+}
+.info-addres span:hover{
+  color: var(--main-color);
+}
+.info-contact{
+  color: var(--dark-color);
+}
+.info-contact span{
+  transition: all 0.4s ease;
+}
+.info-contact span:hover{
+  color: var(--main-color);
+}
+.icon-footer svg{
+  fill: var(--dark-color);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.icon-footer svg:hover{
+  fill: var(--main-color);
+}
+
+/* end footer */
