@@ -2,11 +2,17 @@
     --main-color:#FF782D;
     --dark-color:#555555;
 }
+html {
+  scroll-behavior: smooth;
+}
 .btn-main-color{
   background-color: var(--main-color);
 }
 .text-main-color{
   color: var(--main-color);
+}
+.text-prime-color{
+  color: var(--dark-color);
 }
 body{
   overflow-x: hidden;
@@ -99,13 +105,21 @@ gap: 20px;
 .hero .btn:hover{
 transform: scale(1.02);
 }
-.hero-content h1{
+
+
+.hero-content h1 {
   font-size: 2.5rem;
+ 
 }
+
+
+
 .hero-content p{
   font-size: 1rem;
   color:var(--dark-color);
+ 
 }
+
 .hero img{
   left: 65%;
 }
@@ -155,9 +169,35 @@ transform: scale(1.02);
 .top-catogoriy{
   padding: 50px 0;
 }
-.info-catogoriy p{
-  color:var(--dark-color);
-  
+.top-catogoriy .h2_top{
+      animation-name: top_cato_h2;
+       animation-duration: 3s;
+       animation-timing-function: ease-out;
+}
+.top-catogoriy p{
+      animation-name: top_cato_p;
+       animation-duration: 3s;
+       animation-timing-function: ease-out;
+}
+@keyframes top_cato_h2 {
+  from {
+    opacity: 0;                
+    transform: translateX(-100%); 
+  }
+  to {
+    opacity: 1;                
+    transform: translateX(0);   
+  }
+}
+@keyframes top_cato_p {
+  from {
+    opacity: 0;                
+    transform: translateX(-100%); 
+  }
+  to {
+    opacity: 1;                
+    transform: translateX(0);   
+  }
 }
 .top-catogoriy .btn{
   border: 2px solid var(--dark-color);
@@ -165,10 +205,24 @@ transform: scale(1.02);
   width: 120px;
   background-color: #FFFFFF;
    padding: 2px 0px;
+    animation-name: top_cato_btn;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 
 }
 .top-catogoriy .btn:hover{
   background-color: var(--main-color);
+}
+@keyframes top_cato_btn {
+  from {
+    opacity: 0;                
+    transform: translateX(100%); 
+  }
+  to {
+    opacity: 1;                
+    transform: translateX(0);   
+  }
 }
 
 .top-catogoriy .card{
@@ -177,11 +231,25 @@ transform: scale(1.02);
    transition: all 0.4s ease;
    padding:5px 0;
    gap: 10px;
+     animation-name: top_cato_card;
+     animation-duration: 3s;
+     animation-timing-function: ease-out;
+     animation-fill-mode: forwards;
+
 }
 .top-catogoriy .card:hover{
   transform: scale(1.02);
 }
-
+@keyframes top_cato_card {
+  from {
+    opacity: 0;                
+    transform: translateY(100%); 
+  }
+  to {
+    opacity: 1;                
+    transform: translateY(0);   
+  }
+}
 .top-catogoriy .card h2{
   font-size: 14px;
   transition: all 0.4s ease;
@@ -190,6 +258,7 @@ transform: scale(1.02);
 .top-catogoriy .card h2:hover{
  color: var(--main-color);
 }
+
 .top-catogoriy .card .number-course{
   font-size: 12px;
   font-weight: 600;
@@ -208,14 +277,57 @@ transform: scale(1.02);
   background-color: #FFFFFF;
    padding: 2px 0px;
 }
-.info-featured-courses p{
-  color:var(--dark-color);
+.featured-courses h2{
+  animation-name: featured_courses_h2;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes featured_courses_h2 {
+  from {
+    opacity: 0;                
+    transform: translateX(-100%); 
+  }
+  to {
+    opacity: 1;                
+    transform: translateX(0);   
+  }
+}
+.featured-courses p{
+  animation-name: featured_courses_p;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes featured_courses_p {
+  from {
+    opacity: 0;                
+    transform: translateX(-100%); 
+  }
+  to {
+    opacity: 1;                
+    transform: translateX(0);   
+  }
 }
 .featured-courses .btn{
   transition: all 0.4s ease;
+  animation-name: featured_courses_btn;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 .featured-courses .btn:hover{
   background-color: var(--main-color);
+}
+@keyframes featured_courses_btn {
+  from {
+    opacity: 0;                
+    transform: translateX(100%); 
+  }
+  to {
+    opacity: 1;                
+    transform: translateX(0);   
+  }
 }
 .featured-courses .prime{
   font-size: 10px;
@@ -276,12 +388,14 @@ color: #55BE24;
   }
 }
 /* end featured courses*/
+
 /*start add learn press */
 .add-learn-press{
   padding: 50px;
   background: linear-gradient(to right,#B5FFE7,#FDC1C1);
 
 }
+
 .add-learn-press .btn-explorer{
 border-radius: 20px;
 background-color: var(--main-color);
@@ -293,9 +407,8 @@ padding: 5px 12px;
 .add-learn-press .btn-explorer:hover{
 transform: scale(1.02);
 }
-.add-learn-press .info-learn-press p{
-  color: var(--dark-color);
-}
+
+
 /* end add learn press */
 /* start activity*/
 .activity .active-student{
@@ -334,14 +447,32 @@ transform: scale(1.02);
 }
 /*end learn press */
 
+/*start activity student*/
+.active-student{
+   animation-name: activity_student;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes activity_student {
+  from {
+    opacity: 0;                
+    transform: translateY(100%); 
+  }
+  to {
+    opacity: 1;                
+    transform: translateY(0);   
+  }
+}
+
+/* end acivity student */
 /* education wordpress */
 .education-word-press{
   padding: 50px;
   background: linear-gradient(#FEB6B6,#B7E1FF);
 }
-.education-word-press .info-word-press p{
-  color: var(--dark-color);
-}
+
+
 .education-word-press .btn-explorer{
   border-radius: 20px;
 background-color: var(--main-color);
@@ -353,19 +484,67 @@ padding: 5px 12px;
   transform: scale(1.02);
 }
 
+
 /*end education wordpress */
 /*start student feedbacks*/
 .student-feedbacks{
   padding: 50px 0;
 }
+.student-feedbacks h2{
+   animation-name: feed_h2;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.student-feedbacks .stu_p{
+   animation-name: stu_p;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes feed_h2 {
+  from {
+    opacity: 0;                
+    transform: translateY(-100%); 
+  }
+  to {
+    opacity: 1;                
+    transform: translateY(0);   
+  }
+}
+@keyframes stu_p {
+  from {
+    opacity: 0;                
+    transform: translateY(-100%); 
+  }
+  to {
+    opacity: 1;                
+    transform: translateY(0);   
+  }
+}
 .student-feedbacks .card{
   padding: 33px 0;
   border-radius: 15px;
   transition: all 0.4s ease;
+  animation-name: feed_card;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 .student-feedbacks .card:hover{
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     transform: scale(1.02);
+}
+@keyframes feed_card {
+  from {
+    opacity: 0;                
+    transform:rotateY(180deg); 
+  }
+  to {
+    opacity: 1;                
+    transform:rotateY(0deg);   
+  }
 }
 .student-feedbacks p{
   color: var(--dark-color);
